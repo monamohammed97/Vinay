@@ -536,9 +536,6 @@
     transform: translate(46px, -4px);
     width: 150px;
   }
-}
-
-@media screen and (max-width: 320px) {
 
   svg[width="400"],
   div[aria-label="A chart."],
