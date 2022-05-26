@@ -532,7 +532,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
+  svg[width="240"] {
+    transform: translate(46px, -4px);
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -554,4 +557,6 @@
   svg[width="400"] {
     width: 100% !important;
   }
+
+  
 }
