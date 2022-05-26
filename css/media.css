@@ -200,6 +200,7 @@
   .section2 .box-card p {
     height: 80px;
   }
+
   .section4 .article1,
   .section4 .article2,
   .section4 .article3 {
@@ -530,5 +531,27 @@
   .modal-footer {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  svg[width="400"],
+  div[aria-label="A chart."],
+  div[dir="ltr"] {
+    width: 100px !important;
+  }
+
+  .chart {
+    margin: 0;
+  }
+
+  .chart,
+  #pie-chart,
+  div[dir="ltr"],
+  div[aria-label="A chart."],
+  svg[width="400"] {
+    width: 100% !important;
   }
 }
