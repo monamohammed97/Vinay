@@ -23,18 +23,19 @@
 
   <!-- Select -->
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+ 
 
 </head>
 
 <body>
-
   <!-- header -->
   <header class="container">
     <nav class="navbar navbar-expand-lg navbar-light h-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center col-5" id="navbarNavAltMarkup">
@@ -53,397 +54,425 @@
       </div>
     </nav>
   </header>
-  <!-- hero section -->
-  <section class="hero d-flex container justify-content-between flex-wrap mb-4">
-    <div class="col-12 col-lg-6 left-box">
-      <section class="px-2 px-md-5">
-        <h1 class="text-center fw-bolder">
-          Get instant loans in just 15 minutes<br>
-          <span class="fw-bold">Loan starting from ₹1000 to ₹5000000</span>
-        </h1>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text font-24px">+91</span>
-          </div>
-          <input type="text" class="form-control font-20px py-0" placeholder="Please Enter Number ">
-          <div class="input-group-append">
-            <span class="input-group-text font-24px">Apply</span>
-          </div>
-        </div>
-        <p class="font-15px sec-p f-w-400 m-0">
-          <i class="bi bi-check-circle"></i> By submitting this form, you have read and agree to the <span>Terms of
-            Use</span> & <span>Privacy Policy</span>
-        </p>
-        <div class="d-flex justify-content-end">
-          <button class="btn col-12 col-md-8 font-24px my-4">Download Dhan App</button>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-12 col-lg-5 right-box d-flex justify-content-end align-items-center">
-      <section class="col-10 col-lg-7">
-        <h2 class="font-20px text-center mb-4">Online Loans
-          <b>make sense</b></h2>
-        <article class="d-flex align-items-center mb-2 mb-md-4">
-          <i class="bi bi-file-earmark-text font-24px"></i>
-          <span class="f-w-400 font-15px"> Instant quote with a soft credit check</span>
-        </article>
-        <article class="d-flex align-items-center mb-2 mb-md-4">
-          <i class="bi bi-box-arrow-right font-24px"></i>
-          <span class="f-w-400 font-15px">Small loans issued within 15 minutes</span>
-        </article>
-        <p class="text-center font-15px mb-4">High approval rates</p>
-        <button class="btn apply" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
-
-      </section>
-    </div>
-  </section>
-
-  <!-- section two -->
-  <section class="section2 container my-3 my-md-5">
-    <h2 class="text-center col-11 col-md-7 m-auto">
-      We also get you the lowest interest rate loan offers from multiple Banks and NBFCs
-    </h2>
-    <section class="d-flex justify-content-between flex-wrap">
-      <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
-        <article class="mx-3 p-4">
-          <div class="icon"><img class="icon" src="./images/icon1.svg" alt="icon1"></div>
-          <h3 class="font-24px my-2 my-md-3">30 Minute Loan</h3>
-          <p class="font-18px">Get instant loans in just 15 minutes. Loan starting from ₹1000 to ₹5000000</p>
-          <div class="d-flex justify-content-end">
-            <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
-          </div>
-        </article>
-      </div>
-      <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
-        <article class="mx-3 p-4">
-          <div class="icon"><img class="icon2" src="./images/icon2.svg" alt="icon2"></div>
-          <h3 class="font-24px my-2 my-md-3"> Personal Loan</h3>
-          <p class="font-18px"> We all need money. In order to cater to the lifestyles we lead, we need credit, more or
-            less. </p>
-          <div class="d-flex justify-content-end">
-            <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                class="fa-solid fa-angles-right mx-2"></i>Apply
-              Now</button>
-          </div>
-        </article>
-      </div>
-      <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
-        <article class="mx-3 p-4">
-          <div class="icon"><img class="icon3" src="./images/icon3.svg" alt="icon3"></div>
-          <h3 class="font-24px my-2 my-md-3"> Business Loan</h3>
-          <p class="font-18px"> In the last decade, start-up culture has seen an exponential boom and today,</p>
-          <div class="d-flex justify-content-end">
-            <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                class="fa-solid fa-angles-right mx-2"></i>Apply
-              Now</button>
-          </div>
-        </article>
-      </div>
-      <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
-        <article class="mx-3 p-4">
-          <div class="icon"><img class="icon4" src="./images/icon4.svg" alt="icon4"></div>
-          <h3 class="font-24px my-2 my-md-3"> Home Loan</h3>
-          <p class="font-18px"> There is no other comfort like the comfort of our own home.</p>
-          <div class="d-flex justify-content-end">
-            <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
-          </div>
-        </article>
-      </div>
-      <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
-        <article class="mx-3 p-4">
-          <div class="icon"><img class="icon1" src="./images/icon1.svg" alt="icon1"></div>
-          <h3 class="font-24px my-2 my-md-3"> Gold Loan</h3>
-          <p class="font-18px">Get instant loan against gold with safe and secure loan processing on the spot.</p>
-          <div class="d-flex justify-content-end">
-            <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
-          </div>
-        </article>
-      </div>
-      <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
-        <article class="mx-3 p-4">
-          <div class="icon"><img class="icon5" src="./images/icon5.svg" alt="icon5"></div>
-          <h3 class="font-24px my-2 my-md-3">Car Loan </h3>
-          <p class="font-18px"> A car or any vehicle sometimes becomes a necessity when it comes to transportation or
-            travel.</p>
-          <div class="d-flex justify-content-end">
-            <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
-          </div>
-        </article>
-      </div>
-      <div class="box-card col-12 col-md-8 col-lg-6">
-        <article class="mx-3 p-4 d-flex align-items-center buy">
-          <div class="icon6"><img src="./images/icon6.svg" alt="icon6"></div>
-          <div>
-            <h3 class="font-24px mb-2">Buy Now Plan Later </h3>
-            <p class="font-40px d-flex align-items-center m-0">Comming Soon</p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </section>
-
-  <!-- section three -->
-  <section class="section3 my-3 my-md-5 mb-0">
-    <section class="container d-flex justify-content-between align-items-center h-100 flex-wrap">
-      <article class="font-24px f-w-500 d-flex align-items-center"><i class="bi bi-building"></i>50+ Banks</article>
-      <article class="font-24px f-w-500 d-flex align-items-center"><i class="bi bi-eye-slash"></i>Contactless KYC
-      </article>
-      <article class="font-24px f-w-500 d-flex align-items-center"><i class="bi bi-person-circle"></i>5,00,000+ Happy
-        Customers</article>
-    </section>
-  </section>
-
-  <!-- section four -->
-  <section class="section4 d-flex flex-wrap align-items-center container mb-3 mb-md-5">
-    <article class="col-12 col-xl-4 left-box-4">
-      <h3 class="f-w-500">Instant approval for all type of loan applications across India</h3>
-      <p class="font-24px">
-        We are disrupting the Indian financial landscape, breaking down the barriers of traditional banking and
-        pioneering true financial inclusions through SLQ.</p>
-    </article>
-    <section class="col-12 col-xl-8 h-100 right-box-4">
-      <article class="article1">
-        <div class="img-bg">
-          <img class="img1" src="./images/sec4img1.svg" alt="icon">
-        </div>
-        <h5 class="text-center my-3 my-md-4">Own Credit Model</h5>
-        <p class="text-center">Get better offers regardless of your credit score</p>
-      </article>
-      <article class="article2">
-        <div class="img-bg">
-          <div class="cont-img3"><img src="./images/sec4img3.svg" alt="icon"></div>
-        </div>
-        <h5 class="text-center my-3 my-md-4">Eligibility Check</h5>
-        <p class="text-center">Online Eligibility Checker is free and takes 5 minutes. Find out if you’ll be approved
-          with no credit footprint.</p>
-      </article>
-      <article class="article3">
-        <div class="img-bg">
-          <div class="cont-img2"><img src="./images/sec4img2.svg" alt="icon"></div>
-        </div>
-        <h5 class="text-center my-3 my-md-4">Fast Disbursals</h5>
-        <p class="text-center">Reliable and instant with minimal documentation. Get money credited into your bank
-          account in 30 minutes.</p>
-      </article>
-    </section>
-  </section>
-
-  <!-- section five -->
-  <section class="container section5">
-    <h3 class="text-center my-3 my-md-4 font-40px">Easy Application Process</h3>
-    <p class="text-center font-20px f-w-400 parg">The best part about applying for an instant loan is that it saves you
-      valuable time as you don’t need to visit a
-      bank or fill out lengthy documents. So, the next time you’re in need of funds for a wedding party, a medical
-      emergency, a home renovation project, or even a new business venture, just apply for an instant loan </p>
-    <section class="d-flex flex-wrap">
-      <article class="position-relative col-12 col-sm-6 col-lg-4 number">
-        <span class="position-absolute">1</span>
-        <article class="ml-35">
-          <h4 class="font-30px mx-3 mx-md-5">Select Loan Tenure</h4>
-          <p class="font-20px mx-3 mx-md-5">Choose your loan amount & repayment tenure</p>
-        </article>
-      </article>
-      <article class="position-relative col-12 col-sm-6 col-lg-4 number">
-        <span class="position-absolute two">2</span>
-        <article class="ml-35">
-          <h4 class="font-30px mx-3 mx-md-5">Upload Documents</h4>
-          <p class="font-20px mx-3 mx-md-5"> Complete your KYC and Verify income</p>
-        </article>
-      </article>
-      <article class="position-relative col-12 col-sm-6 col-lg-4 number">
-        <span class="position-absolute three">3</span>
-        <article class="ml-35">
-          <h4 class="font-30px mx-3 mx-md-5">Amount Disbursed</h4>
-          <p class="font-20px mx-3 mx-md-5">Direct Bank A/c transfer in a few minutes!</p>
-        </article>
-      </article>
-    </section>
-    <div class="w-100 d-flex justify-content-center">
-      <button class="btn font-24px">
-        Downlaod Dhan APP
-      </button>
-    </div>
-  </section>
-
-  <!-- section six -->
-  <section class="container section6 my-5">
-    <h3 class="text-center font-40px mb-3 mb-md-5">Calculate EMI on Home, Car and Personal Loans</h3>
-    <div class="d-flex flex-wrap">
-      <section class="d-flex flex-column col-12 col-xl-7">
-        <section class="range-box d-flex flex-wrap my-3">
-          <div class="mb-3 col-12 col-sm-6 px-4">
-            <h4 class="font-20px fw-bold">Loan Amount (₹ ) </h4>
-            <div class="content">
-              <input type="range" id="loan_amount" min="1000000" max="10000000" value="3000000" data-rangeslider>
+  <main id="main">
+    <!-- hero section -->
+    <section class="hero d-flex container justify-content-between flex-wrap mb-4">
+      <div class="col-12 col-lg-6 left-box">
+        <section class="px-2 px-md-5">
+          <h1 class="text-center fw-bolder">
+            Get instant loans in just 15 minutes<br>
+            <span class="fw-bold">Loan starting from ₹1000 to ₹5000000</span>
+          </h1>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text font-24px pt-0">+91</span>
             </div>
-            <p class="font-20px" id="amount"></p>
-          </div>
-          <div class="mb-3 col-12 col-sm-6 px-4">
-            <h4 class="font-20px fw-bold">Interest Rate (p.a) </h4>
-            <div class="content">
-              <input type="range" id="insert_rate" min="1" max="100" value="6.9" data-rangeslider>
+            <input type="text" class="form-control font-20px py-0 pb-1 pb-md-2" placeholder="Please Enter Number ">
+            <div class="input-group-append pb-1 pb-md-2">
+              <span class="input-group-text font-24px">Apply</span>
             </div>
-            <p class="font-20px" id="rate"></p>
+          </div>
+          <p class="font-15px sec-p f-w-400 m-0">
+            <i class="bi bi-check-circle"></i> By submitting this form, you have read and agree to the <span>Terms of
+              Use</span> & <span>Privacy Policy</span>
+          </p>
+          <div class="d-flex justify-content-end">
+            <button class="btn col-12 col-md-8 font-24px my-4">Download Dhan App</button>
           </div>
         </section>
-        <section class="range-box d-flex flex-wrap">
-          <div class="mb-3 col-12 col-sm-6 px-4">
-            <h4 class="font-20px fw-bold">Tenure (years) </h4>
-            <div class="content">
-              <input type="range" id="years" min="1" max="25" value="5" data-rangeslider>
-            </div>
-            <p class="font-20px" id="year"></p>
-          </div>
-          <div class="py-3 mb-3 col-12 col-sm-6 px-4 box-last d-flex flex-column justify-content-center">
-            <h4 class="font-20px h4">Monthly Installments (EMI)</h4>
-            <p class="font-30px fw-bold p-blue m-0">₹ 5,926</p>
-          </div>
+      </div>
+
+      <div class="col-12 col-lg-5 right-box d-flex justify-content-end align-items-center">
+        <section class="col-10 col-lg-7">
+          <h2 class="font-20px text-center mb-4">Online Loans
+            <b>make sense</b></h2>
+          <article class="d-flex align-items-center mb-2 mb-md-4">
+            <i class="bi bi-file-earmark-text font-24px"></i>
+            <span class="f-w-400 font-15px"> Instant quote with a soft credit check</span>
+          </article>
+          <article class="d-flex align-items-center mb-2 mb-md-4">
+            <i class="bi bi-box-arrow-right font-24px"></i>
+            <span class="f-w-400 font-15px">Small loans issued within 15 minutes</span>
+          </article>
+          <p class="text-center font-15px mb-4">High approval rates</p>
+          <button class="btn apply" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
+
         </section>
+      </div>
+    </section>
+
+    <!-- section two -->
+    <section class="section2 container my-3 my-md-5">
+      <h2 class="text-center col-11 col-md-7 m-auto">
+        We also get you the lowest interest rate loan offers from multiple Banks and NBFCs
+      </h2>
+      <section class="d-flex justify-content-between flex-wrap">
+        <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
+          <article class="mx-3 p-4">
+            <div class="icon"><img class="icon" src="./images/icon1.svg" alt="icon1"></div>
+            <h3 class="font-24px my-2 my-md-3">30 Minute Loan</h3>
+            <p class="font-18px">Get instant loans in just 15 minutes. Loan starting from ₹1000 to ₹5000000</p>
+            <div class="d-flex justify-content-end">
+              <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
+            </div>
+          </article>
+        </div>
+        <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
+          <article class="mx-3 p-4">
+            <div class="icon"><img class="icon2" src="./images/icon2.svg" alt="icon2"></div>
+            <h3 class="font-24px my-2 my-md-3"> Personal Loan</h3>
+            <p class="font-18px"> We all need money. In order to cater to the lifestyles we lead, we need credit, more
+              or
+              less. </p>
+            <div class="d-flex justify-content-end">
+              <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                  class="fa-solid fa-angles-right mx-2"></i>Apply
+                Now</button>
+            </div>
+          </article>
+        </div>
+        <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
+          <article class="mx-3 p-4">
+            <div class="icon"><img class="icon3" src="./images/icon3.svg" alt="icon3"></div>
+            <h3 class="font-24px my-2 my-md-3"> Business Loan</h3>
+            <p class="font-18px"> In the last decade, start-up culture has seen an exponential boom and today,</p>
+            <div class="d-flex justify-content-end">
+              <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                  class="fa-solid fa-angles-right mx-2"></i>Apply
+                Now</button>
+            </div>
+          </article>
+        </div>
+        <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
+          <article class="mx-3 p-4">
+            <div class="icon"><img class="icon4" src="./images/icon4.svg" alt="icon4"></div>
+            <h3 class="font-24px my-2 my-md-3"> Home Loan</h3>
+            <p class="font-18px"> There is no other comfort like the comfort of our own home.</p>
+            <div class="d-flex justify-content-end">
+              <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
+            </div>
+          </article>
+        </div>
+        <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
+          <article class="mx-3 p-4">
+            <div class="icon"><img class="icon1" src="./images/icon1.svg" alt="icon1"></div>
+            <h3 class="font-24px my-2 my-md-3"> Gold Loan</h3>
+            <p class="font-18px">Get instant loan against gold with safe and secure loan processing on the spot.</p>
+            <div class="d-flex justify-content-end">
+              <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
+            </div>
+          </article>
+        </div>
+        <div class="box-card col-12 col-sm-6 col-lg-4 col-xl-3">
+          <article class="mx-3 p-4">
+            <div class="icon"><img class="icon5" src="./images/icon5.svg" alt="icon5"></div>
+            <h3 class="font-24px my-2 my-md-3">Car Loan </h3>
+            <p class="font-18px"> A car or any vehicle sometimes becomes a necessity when it comes to transportation or
+              travel.</p>
+            <div class="d-flex justify-content-end">
+              <button class="btn font-18px" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
+            </div>
+          </article>
+        </div>
+        <div class="box-card col-12 col-md-8 col-lg-6">
+          <article class="mx-3 p-4 d-flex align-items-center buy">
+            <div class="icon6"><img src="./images/icon6.svg" alt="icon6"></div>
+            <div>
+              <h3 class="font-24px mb-2">Buy Now Plan Later </h3>
+              <p class="font-40px d-flex align-items-center m-0">Comming Soon</p>
+            </div>
+          </article>
+        </div>
       </section>
-      <section class="col-12 col-xl-5 px-0 px-xl-4 d-flex align-items-center">
-        <article class="range-boxR w-100">
-          <h4 class="text-center fw-bold mt-4">Break-up of Total Payment</h4>
-          <section class="d-flex flex-column-reverse flex-sm-row align-items-start align-items-sm-end">
-            <section class="chart col">
-              <div id="pie-chart"></div>
+    </section>
+
+    <!-- section three -->
+    <section class="section3 my-3 my-md-5 mb-0">
+      <section class="container d-flex justify-content-between align-items-center h-100 flex-wrap">
+        <article class="font-24px f-w-500 d-flex align-items-center"><i class="bi bi-building"></i>50+ Banks</article>
+        <article class="font-24px f-w-500 d-flex align-items-center"><i class="bi bi-eye-slash"></i>Contactless KYC
+        </article>
+        <article class="font-24px f-w-500 d-flex align-items-center"><i class="bi bi-person-circle"></i>5,00,000+ Happy
+          Customers</article>
+      </section>
+    </section>
+
+    <!-- section four -->
+    <section class="section4 d-flex flex-wrap align-items-center container mb-3 mb-md-5 position-relative">
+      <article class="col-12 col-xl-4 left-box-4 position-absolute">
+        <h3 class="f-w-500">Instant approval for all type of loan applications across India</h3>
+        <p class="font-24px">
+          We are disrupting the Indian financial landscape, breaking down the barriers of traditional banking and
+          pioneering true financial inclusions through SLQ.</p>
+      </article>
+      <section class="col-12 col-xl-8 h-100 right-box-4 position-absolute">
+        <article class="article1">
+          <div class="img-bg">
+            <img class="img1" src="./images/sec4img1.svg" alt="icon">
+          </div>
+          <h5 class="text-center my-3 my-md-4">Own Credit Model</h5>
+          <p class="text-center">Get better offers regardless of your credit score</p>
+        </article>
+        <article class="article2">
+          <div class="img-bg">
+            <div class="cont-img3"><img src="./images/sec4img3.svg" alt="icon"></div>
+          </div>
+          <h5 class="text-center my-3 my-md-4">Eligibility Check</h5>
+          <p class="text-center">Online Eligibility Checker is free and takes 5 minutes. Find out if you’ll be approved
+            with no credit footprint.</p>
+        </article>
+        <article class="article3">
+          <div class="img-bg">
+            <div class="cont-img2"><img src="./images/sec4img2.svg" alt="icon"></div>
+          </div>
+          <h5 class="text-center my-3 my-md-4">Fast Disbursals</h5>
+          <p class="text-center">Reliable and instant with minimal documentation. Get money credited into your bank
+            account in 30 minutes.</p>
+        </article>
+      </section>
+    </section>
+
+    <!-- section five -->
+    <section class="container section5">
+      <h3 class="text-center my-3 my-md-4 font-40px">Easy Application Process</h3>
+      <p class="text-center font-20px f-w-400 parg">The best part about applying for an instant loan is that it saves
+        you
+        valuable time as you don’t need to visit a
+        bank or fill out lengthy documents. So, the next time you’re in need of funds for a wedding party, a medical
+        emergency, a home renovation project, or even a new business venture, just apply for an instant loan </p>
+      <section class="d-flex flex-wrap">
+        <article class="position-relative col-12 col-sm-6 col-lg-4 number">
+          <span class="position-absolute">1</span>
+          <article class="ml-35">
+            <h4 class="font-30px mx-3 mx-md-5">Select Loan Tenure</h4>
+            <p class="font-20px mx-3 mx-md-5">Choose your loan amount & repayment tenure</p>
+          </article>
+        </article>
+        <article class="position-relative col-12 col-sm-6 col-lg-4 number">
+          <span class="position-absolute two">2</span>
+          <article class="ml-35">
+            <h4 class="font-30px mx-3 mx-md-5">Upload Documents</h4>
+            <p class="font-20px mx-3 mx-md-5"> Complete your KYC and Verify income</p>
+          </article>
+        </article>
+        <article class="position-relative col-12 col-sm-6 col-lg-4 number">
+          <span class="position-absolute three">3</span>
+          <article class="ml-35">
+            <h4 class="font-30px mx-3 mx-md-5">Amount Disbursed</h4>
+            <p class="font-20px mx-3 mx-md-5">Direct Bank A/c transfer in a few minutes!</p>
+          </article>
+        </article>
+      </section>
+      <div class="w-100 d-flex justify-content-center">
+        <button class="btn font-24px">
+          Downlaod Dhan APP
+        </button>
+      </div>
+    </section>
+
+    <!-- section six -->
+    <section class="container section6 my-5">
+      <h3 class="text-center font-40px mb-3 mb-md-5">Calculate EMI on Home, Car and Personal Loans</h3>
+      <div class="d-flex flex-wrap">
+        <section class="d-flex flex-column col-12 col-xl-7" id="range_section">
+          <section class="range-box d-flex flex-wrap my-3">
+            <div class="mb-3 col-12 col-sm-6 px-4">
+              <h4 class="font-20px fw-bold">Loan Amount (₹ ) </h4>
+              <div class="content">
+                <input type="range" id="loan_amount" min="1000000" max="10000000" value="3000000" data-rangeslider>
+              </div>
+              <p class="font-20px" id="amount"></p>
+            </div>
+            <div class="mb-3 col-12 col-sm-6 px-4">
+              <h4 class="font-20px fw-bold">Interest Rate (p.a) </h4>
+              <div class="content">
+                <input type="range" id="insert_rate" min="1" max="100" value="6.9" data-rangeslider>
+              </div>
+              <p class="font-20px" id="rate"></p>
+            </div>
+          </section>
+          <section class="range-box d-flex flex-wrap">
+            <div class="mb-3 col-12 col-sm-6 px-4">
+              <h4 class="font-20px fw-bold">Tenure (years) </h4>
+              <div class="content">
+                <input type="range" id="years" min="1" max="25" value="5" data-rangeslider>
+              </div>
+              <p class="font-20px" id="year"></p>
+            </div>
+            <div class="py-3 mb-3 col-12 col-sm-6 px-4 box-last d-flex flex-column justify-content-center">
+              <h4 class="font-20px h4">Monthly Installments (EMI)</h4>
+              <p class="font-30px fw-bold p-blue m-0">₹ 5,926</p>
+            </div>
+          </section>
+        </section>
+        <section class="col-12 col-xl-5 px-0 px-xl-4 d-flex align-items-center">
+          <article class="range-boxR w-100">
+            <h4 class="text-center fw-bold mt-4">Break-up of Total Payment</h4>
+            <section class="d-flex flex-column-reverse flex-sm-row align-items-start align-items-sm-end">
+              <section class="chart col-md-5">
+                <div id="pie-chart"></div>
+              </section>
+              <article class="text col-md-7">
+                <p class="f-w-400 font-15px"><i class="bi bi-circle-fill icon1-c"></i> Principal Amt: 3,00,000</p>
+                <p class="f-w-400 font-15px"><i class="bi bi-circle-fill icon2-c"></i>Interest Amt: 55,573</p>
+                <p class="f-w-400 font-15px">Total Amt Payble: 3,55,573</p>
+              </article>
             </section>
-            <article class="text col">
-              <p class="fw-bold font-15px"><i class="bi bi-circle-fill icon1-c"></i> Principal Amt: 3,00,000</p>
-              <p class="fw-bold font-15px"><i class="bi bi-circle-fill icon2-c"></i>Interest Amt: 55,573</p>
-              <p class="fw-bold font-15px">Total Amt Payble: 3,55,573</p>
-            </article>
-          </section>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <!-- section seven -->
+    <section class="section7 d-flex align-items-center">
+      <section class="container d-flex flex-wrap justify-content-between">
+        <ul class="m-0 col-12 col-md-6 my-3 my-md-0 flex-wrap">
+          <li class="font-30px"><a href=""><i class="bi bi-facebook"></i></a></li>
+          <li class="font-30px"><a href=""><i class="bi bi-twitter"></i></a></li>
+          <li class="font-30px"><a href=""><i class="bi bi-instagram"></i></a></li>
+          <li class="font-30px"><a href=""><i class="bi bi-linkedin"></i></a></li>
+          <li class="font-30px"><a href=""><i class="bi bi-youtube"></i></a></li>
+        </ul>
+        <section class="col-12 col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Your Email ID ">
+            <button class="btn input-group-text">Subscribe</button>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <section class="container d-flex flex-wrap first-section">
+        <article class="d-flex col-12 col-md-4 justify-content-between">
+          <div class="col-12 col-md-4 footer-img"><img src="./images/logofooter.svg" alt="logo"></div>
+        </article>
+        <article class="col-12 col-md-8 d-flex">
+          <ul class="col-6 col-md-5">
+            <li class="font-24px fw-bold mb-2 mb-md-4">DHAN APP</li>
+            <li class="font-24px f-w-300">About</li>
+            <li class="font-24px f-w-300">Careers</li>
+            <li class="font-24px f-w-300">Contact</li>
+          </ul>
+          <ul class="col-6 col-md-7">
+            <li class="font-24px fw-bold mb-2 mb-md-4">CALCULATOR</li>
+            <li class="font-24px f-w-300">EMI Calculator</li>
+            <li class="font-24px f-w-300">Home Loan Calculator</li>
+            <li class="font-24px f-w-300">Personal Loan EMI Calculator</li>
+          </ul>
         </article>
       </section>
-    </div>
-  </section>
-
-  <!-- section seven -->
-  <section class="section7 d-flex align-items-center">
-    <section class="container d-flex flex-wrap justify-content-between">
-      <ul class="m-0 col-12 col-md-6 my-3 my-md-0 flex-wrap">
-        <li class="font-30px"><a href=""><i class="bi bi-facebook"></i></a></li>
-        <li class="font-30px"><a href=""><i class="bi bi-twitter"></i></a></li>
-        <li class="font-30px"><a href=""><i class="bi bi-instagram"></i></a></li>
-        <li class="font-30px"><a href=""><i class="bi bi-linkedin"></i></a></li>
-        <li class="font-30px"><a href=""><i class="bi bi-youtube"></i></a></li>
-      </ul>
-      <section class="col-12 col-md-6">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Enter Your Email ID ">
-          <button class="btn input-group-text">Subscribe</button>
-        </div>
+      <section class="d-flex justify-content-center align-items-center second-section">
+        <ul class="d-flex flex-wrap m-0">
+          <li class="font-22px f-w-300"><a href="">Privacy Policy</a></li>
+          <li class="font-22px f-w-300"><a href="">Terms of Use </a></li>
+          <li class="font-22px f-w-300"><a href="">Disclaimer</a></li>
+          <li class="font-22px f-w-300"><a href="">Intellectual Policy</a></li>
+          <li class="font-22px f-w-300"><a href="">Sitemap</a></li>
+        </ul>
       </section>
-    </section>
-  </section>
+    </footer>
 
-  <!-- footer -->
-  <footer>
-    <section class="container d-flex flex-wrap first-section">
-      <article class="d-flex col-12 col-md-4 justify-content-between">
-        <div class="col-12 col-md-4 footer-img"><img src="./images/logofooter.svg" alt="logo"></div>
-      </article>
-      <article class="col-12 col-md-8 d-flex">
-        <ul class="col-6 col-md-5">
-          <li class="font-24px fw-bold mb-2 mb-md-4">DHAN APP</li>
-          <li class="font-24px">About</li>
-          <li class="font-24px">Careers</li>
-          <li class="font-24px">Contact</li>
-        </ul>
-        <ul class="col-6 col-md-7">
-          <li class="font-24px fw-bold mb-2 mb-md-4">CALCULATOR</li>
-          <li class="font-24px">EMI Calculator</li>
-          <li class="font-24px">Home Loan Calculator</li>
-          <li class="font-24px">Personal Loan EMI Calculator</li>
-        </ul>
-      </article>
-    </section>
-    <section class="d-flex justify-content-center align-items-center second-section">
-      <ul class="d-flex flex-wrap m-0">
-        <li class="font-22px"><a href="">Privacy Policy</a></li>
-        <li class="font-22px"><a href="">Terms of Use </a></li>
-        <li class="font-22px"><a href="">Disclaimer</a></li>
-        <li class="font-22px"><a href="">Intellectual Policy</a></li>
-        <li class="font-22px"><a href="">Sitemap</a></li>
-      </ul>
-    </section>
-  </footer>
+    <!-- Modal -->
 
-  <!-- Modal -->
-
-  <!-- Modal -->
-  <form class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title font-24px text-center w-100" id="exampleModalLabel">OK, give us your Information</h5>
-        </div>
-        <div class="modal-body">
-          <section class="d-flex flex-wrap mb-2 mb-lg-4">
-            <div class="col-12 col-md-6">
-              <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
-                <label for="name" class="form-label">Full Name *</label>
-                <input type="text" class="form-control" id="name">
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
-                <label for="amount" class="form-label">Loan Amount (INR) *</label>
-                <input type="email" class="form-control" id="amount">
-              </div>
-            </div>
-          </section>
-          <section class="d-flex flex-wrap mb-2 mb-lg-4">
-            <div class="col-12 col-md-6">
-              <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
-                <label class="form-label">Mobile *</label>
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control">
-                  <span class="input-group-text">SEND OTP</span>
+    <!-- Modal -->
+    <form class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-24px text-center w-100" id="exampleModalLabel">OK, give us your Information</h5>
+          </div>
+          <div class="modal-body">
+            <section class="d-flex flex-wrap mb-2 mb-lg-4">
+              <div class="col-12 col-md-6">
+                <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
+                  <label for="name" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="name">
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 d-flex">
-              <div class="mb-2 mb-lg-3 mx-2 mx-lg-4 col-6">
-                <label for="OTP" class="form-label"></label>
-                <input type="text" class="form-control" id="OTP" placeholder="Enter OTP">
+              <div class="col-12 col-md-6">
+                <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
+                  <label for="amount" class="form-label">Loan Amount (INR) *</label>
+                  <input type="email" class="form-control" id="amount">
+                </div>
               </div>
-              <p class="col-6 d-flex flex-column justify-content-end">
-                Didn’t recieve code?<br>
-                <a href="" class="text-decoration-none">Resend OTP</a>
-              </p>
-            </div>
-          </section>
-          <section class="d-flex flex-wrap mb-2 mb-lg-4">
-            <div class="col-12 col-md-6">
-              <div class="mx-2 mx-lg-4">
-                <label for="name" class="form-label">Profession *</label>
+            </section>
+            <section class="d-flex flex-wrap mb-2 mb-lg-4">
+              <div class="col-12 col-md-6">
+                <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
+                  <label class="form-label">Mobile *</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control">
+                    <span class="input-group-text">SEND OTP</span>
+                  </div>
+                </div>
               </div>
-              <div class="mx-2 mx-lg-4">
-                <select class="js-example-basic-multiple" id="js-example-basic-multiple" name="states[]"
-                  multiple="multiple">
-                  <option value="job">Job</option>
-                  <option value="business">Business</option>
-                  <option value="Student">Student</option>
-                  <option value="other">Others</option>
-                </select>
+              <div class="col-12 col-md-6 d-flex">
+                <div class="mx-2 mx-lg-4 d-flex justify-content-between">
+                  <div class="mb-2 mb-lg-3 col-6">
+                    <label for="OTP" class="form-label"></label>
+                    <input type="text" class="form-control" id="OTP" placeholder="Enter OTP">
+                  </div>
+                  <p class="col-5 d-flex flex-column justify-content-end align-items-end">
+                    Didn’t recieve code?<br>
+                    <a href="" class="text-decoration-none">Resend OTP</a>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
-                <label for="income" class="form-label">Monthly Income (INR) *</label>
-                <input type="email" class="form-control" id="income">
+            </section>
+            <section class="d-flex flex-wrap mb-2 mb-lg-4">
+              <div class="col-12 col-md-6">
+                <div class="mx-2 mx-lg-4">
+                  <label for="name" class="form-label">Profession *</label>
+                </div>
+                <div class="mx-2 mx-lg-4">
+                  <dl class="dropdown">
+                    <dt>
+                      <div class="p-0">
+                        <span class="hida"></span>
+                        <p class="multiSel m-0"></p>
+                      </div>
+                    </dt>
+                    <dd>
+                      <div class="mutliSelect">
+                        <ul>
+                          <li>
+                            <input type="checkbox" value="Job" />Job</li>
+                          <li>
+                            <input type="checkbox" value="Business" />Business</li>
+                          <li>
+                            <input type="checkbox" value="Student" />Student</li>
+                          <li>
+                            <input type="checkbox" value="Others" />Others</li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <!-- <select class="js-example-basic-multiple" id="js-example-basic-multiple" name="states[]"
+                    multiple="multiple">
+                    <option value="job">Job</option>
+                    <option value="business">Business</option>
+                    <option value="Student">Student</option>
+                    <option value="other">Others</option>
+                  </select> -->
+                </div>
               </div>
-            </div>
-          </section>
-        </div>
-        <div class="modal-footer px-2 px-md-3">
-          <button type="submit" class="btn btn-primary f-w-400 font-24px">Submit</button>
+              <div class="col-12 col-md-6">
+                <div class="mb-2 mb-lg-3 mx-2 mx-lg-4">
+                  <label for="income" class="form-label">Monthly Income (INR) *</label>
+                  <input type="email" class="form-control" id="income">
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer px-2 px-md-3">
+            <button type="submit" class="btn btn-primary f-w-400 font-24px">Submit</button>
+          </div>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </main>
 
   <script src="./js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -456,6 +485,10 @@
   <script src="https://www.google.com/jsapi"></script>
   <script src="./js/chart.js"></script>
 
+  <script src="./js/script.js"></script>
+
+  <!-- range -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 

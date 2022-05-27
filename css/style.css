@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 :root {
   --text-color: #323B5F;
@@ -13,6 +14,12 @@
   --p: #444444;
   --text-c: #272D30;
   --text-c1: #263238;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-c);
 }
 
 .container {
@@ -110,12 +117,14 @@ h1 {
   align-items: center;
   color: #fff;
 }
-.navbar .container-fluid{
+
+.navbar .container-fluid {
   z-index: 1;
   background: #fff;
   padding-bottom: 20px;
 
-} 
+}
+
 .hero .input-group-append .input-group-text {
   background-color: transparent;
   color: #fff;
@@ -139,9 +148,12 @@ h1 {
   color: var(--blue-border);
 }
 
+.left-box button {
+  height: 59px;
+}
+
 .left-box button,
 .left-box button:hover {
-  height: 59px;
   background: #000000;
   border: 1px solid #000000;
   border-radius: 50px;
@@ -181,6 +193,14 @@ h1 {
   height: 40px;
   width: 100%;
   color: #fff;
+}
+
+.hero .input-group-append {
+  margin-bottom: 4px;
+}
+
+.section6 .text p {
+  color: #4A4747;
 }
 
 /*******************************/
@@ -281,6 +301,9 @@ footer {
   background-size: cover;
 }
 
+.left-box-4{
+  width: 40% !important;
+}
 .section4 .left-box-4 h3 {
   line-height: 56.6px;
   letter-spacing: 0.84px;
@@ -290,9 +313,12 @@ footer {
 }
 
 .section4 .left-box-4 p {
-  line-height: 68px;
+  line-height: 50px;
   letter-spacing: .84px;
   color: #85898c;
+}
+.right-box-4{
+  right: 0;
 }
 
 .section4 .article1,
@@ -449,10 +475,10 @@ span.three {
   height: 150px;
 }
 
-.section6 .text {
+/* .section6 .text {
   right: 20px;
   top: 50px;
-}
+} */
 
 .text .icon1-c {
   color: var(--blue-border);
@@ -564,34 +590,175 @@ footer .second-section ul li:not(:last-child) {
   font-size: 15px;
   min-height: 19px;
 }
-.modal-content input{
+
+.modal-content input {
   height: 40px;
 }
-.modal-content .input-group span{
+
+.modal-content .input-group span {
   background-color: var(--blue-border);
   color: #fff;
   font-weight: 500;
   padding: 0 1.5rem;
 }
-.modal-body{
+
+.modal-body {
   padding: 1rem 0;
 }
+
 /* select */
-.select2-container{
+.select2-container {
   width: 100% !important;
   height: 40px;
 }
-.select2-container--default .select2-selection--multiple
-{
+
+.select2-container--default .select2-selection--multiple {
   height: 100% !important;
 }
-.chart{
+
+.chart {
   margin-left: 2rem;
 }
-.pie-chart{
+
+.pie-chart {
   width: 200px !important;
   margin-left: 3rem !important;
 }
-.p-blue{
+
+.p-blue {
   color: var(--blue-border);
+}
+
+.box-shadow {
+  box-shadow: 0px 13px 21px -10px #a49e9e;
+}
+
+/* dropdown */
+
+.dropdown dd,
+.dropdown dt {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown ul {
+  margin: -1px 0 0 0;
+}
+
+.dropdown dd {
+  position: relative;
+}
+
+.dropdown div,
+.dropdown div:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+  width: 100%;
+}
+
+.dropdown dt div {
+  background-color: #fff;
+  color: #212529;
+  border: 1px solid #ced4da;
+  display: block;
+  align-items: center;
+  padding: 0 15px !important;
+  font-weight: 400;
+  height: 40px;
+  line-height: 24px;
+  overflow: hidden;
+  border-radius: .25rem;
+}
+
+.dropdown dt div span,
+.multiSel span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 3px 2px 0;
+}
+
+.multiSel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown dd ul {
+  border: 1px solid rgb(206, 212, 218);
+  padding-top: 0px;
+  color: #212529;
+  display: none;
+  left: 0px;
+  padding: 2px 15px 2px 5px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  list-style: none;
+  height: 100px;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.dropdown span.value {
+  display: none;
+}
+
+.dropdown dd ul li div {
+  padding: 5px;
+  display: block;
+}
+
+.dropdown dd ul li div:hover {
+  background-color: #fff;
+}
+
+.mutliSelect ul li {
+  display: flex;
+  align-items: center;
+}
+
+.mutliSelect ul li input {
+  margin: 0 10px;
+}
+/* range */
+.rSlider {
+  position: relative;
+}
+#range_section .rSlider .slide {
+  background: red;
+  height: 5px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  z-index: 2;
+}
+#range_section input[type=range] {
+  position: relative;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#range_section input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--blue-border);
+  cursor: pointer;
+  border-radius: 50%;
+}
+#range_section input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--blue-border);
+  cursor: pointer;
+  border-radius: 50%;
 }

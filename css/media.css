@@ -49,6 +49,10 @@
     width: 150px !important;
   }
 
+  .text .font-15px {
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -104,6 +108,7 @@
   }
 
   .modal-content input,
+  .dropdown dt div,
   .select2-container {
     height: 35px;
   }
@@ -120,6 +125,19 @@
   .section4 .article2,
   .section4 .article3 {
     min-height: 360px;
+  }
+
+  .section4 .left-box-4 p {
+    line-height: 50px;
+  }
+
+  .section4,
+  .left-box-4,
+  .right-box-4 {
+    position: static !important;
+  }
+  .left-box-4{
+    width: 100% !important;
   }
 }
 
@@ -206,6 +224,7 @@
   .section4 .article3 {
     min-height: 315px;
   }
+
 }
 
 @media screen and (max-width: 767.98px) {
@@ -238,10 +257,14 @@
     margin-left: 35PX;
   }
 
-  .rangeslider__handle {
+  #range_section input[type="range"]::-webkit-slider-thumb {
     width: 15px;
     height: 15px;
-    margin-top: -8px;
+    /* margin-top: -8px; */
+  }
+
+  #range_section input[type=range] {
+    height: 3px;
   }
 
   .section7 {
@@ -289,6 +312,10 @@
 @media screen and (max-width: 575.98px) {
   .navbar-brand {
     height: 60px;
+  }
+
+  .container-fluid {
+    padding: 0;
   }
 
   h1 {
@@ -552,8 +579,25 @@
   #pie-chart,
   div[dir="ltr"],
   div[aria-label="A chart."],
-  svg[width="400"] {
+  svg[width="400"],
+  svg[width="294"] {
     width: 100% !important;
   }
 
+  #pie-chart {
+    width: 45% !important;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  #pie-chart {
+    width: 50% !important;
+  }
+
+  /* svg[width="254"]
+  {
+    width: 100% !important;
+  } */
 }
