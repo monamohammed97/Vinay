@@ -580,7 +580,8 @@
   div[dir="ltr"],
   div[aria-label="A chart."],
   svg[width="400"],
-  svg[width="294"] {
+  svg[width="294"],
+  svg[width="256"] {
     width: 100% !important;
   }
 
@@ -588,12 +589,27 @@
     width: 45% !important;
     margin: auto;
   }
-
+  .modal-content{
+    padding: 1rem .5rem;
+  }
+  .fa-angle-down{
+    font-size: 13px;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   #pie-chart {
     width: 50% !important;
+  }
+
+  /* svg[width="254"]
+  {
+    width: 100% !important;
+  } */
+}
+@media screen and (max-width: 360px) {
+  #pie-chart {
+    width: 66% !important;
   }
 
   /* svg[width="254"]

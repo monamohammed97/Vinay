@@ -301,9 +301,10 @@ footer {
   background-size: cover;
 }
 
-.left-box-4{
+.left-box-4 {
   width: 40% !important;
 }
+
 .section4 .left-box-4 h3 {
   line-height: 56.6px;
   letter-spacing: 0.84px;
@@ -317,7 +318,8 @@ footer {
   letter-spacing: .84px;
   color: #85898c;
 }
-.right-box-4{
+
+.right-box-4 {
   right: 0;
 }
 
@@ -722,10 +724,12 @@ footer .second-section ul li:not(:last-child) {
 .mutliSelect ul li input {
   margin: 0 10px;
 }
+
 /* range */
 .rSlider {
   position: relative;
 }
+
 #range_section .rSlider .slide {
   background: red;
   height: 5px;
@@ -735,6 +739,7 @@ footer .second-section ul li:not(:last-child) {
   top: 9px;
   z-index: 2;
 }
+
 #range_section input[type=range] {
   position: relative;
   -webkit-appearance: none;
@@ -755,10 +760,18 @@ footer .second-section ul li:not(:last-child) {
   cursor: pointer;
   border-radius: 50%;
 }
+
 #range_section input[type="range"]::-moz-range-thumb {
   width: 25px;
   height: 25px;
   background: var(--blue-border);
   cursor: pointer;
   border-radius: 50%;
+}
+
+/*  */
+.fa-angle-down {
+  position: absolute;
+  top: 11px;
+  right: 11px;
 }
