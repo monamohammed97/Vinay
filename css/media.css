@@ -314,7 +314,7 @@
   }
   .navbar-nav,
   .navbar-collapse {
-    padding-left: .5rem;
+    padding-left: .5rem !important;
   }
 }
 
