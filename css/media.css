@@ -312,6 +312,7 @@
 @media screen and (max-width: 575.98px) {
   .navbar-brand {
     height: 60px;
+    width: 120px;
   }
 
   .container-fluid {
