@@ -122,7 +122,7 @@ h1 {
   z-index: 1;
   background: #fff;
   padding-bottom: 20px;
-
+  border-radius: 1rem;
 }
 
 .hero .input-group-append .input-group-text {
@@ -774,4 +774,16 @@ footer .second-section ul li:not(:last-child) {
   position: absolute;
   top: 11px;
   right: 11px;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  margin: 0 0.5rem;
+  font-size: 12px;
+}
+
+.close button {
+  padding: 10px;
+  border: 2px solid var(--blue-border);
 }

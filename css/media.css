@@ -136,7 +136,8 @@
   .right-box-4 {
     position: static !important;
   }
-  .left-box-4{
+
+  .left-box-4 {
     width: 100% !important;
   }
 }
@@ -225,6 +226,10 @@
     min-height: 315px;
   }
 
+  .navbar-nav,
+  .navbar-collapse {
+    padding-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -306,6 +311,10 @@
 
   .section2 .box-card p {
     height: 90px;
+  }
+  .navbar-nav,
+  .navbar-collapse {
+    padding-left: .5rem;
   }
 }
 
@@ -590,11 +599,16 @@
     width: 45% !important;
     margin: auto;
   }
-  .modal-content{
+
+  .modal-content {
     padding: 1rem .5rem;
   }
-  .fa-angle-down{
+
+  .fa-angle-down {
     font-size: 13px;
+  }
+  .close button {
+    padding: 5px;
   }
 }
 
@@ -608,6 +622,7 @@
     width: 100% !important;
   } */
 }
+
 @media screen and (max-width: 360px) {
   #pie-chart {
     width: 66% !important;
